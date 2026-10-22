@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        background-color: #000000;
+    }
+    header {
+        margin-top: 20px;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        padding: 1rem 9%;
+        background-color: transparent;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    .logo {
+        font-size: 3rem;
+        color: red;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    nav a {
+        font-size: 1.8rem;
+        color: white;
+        margin-left: 4rem;
+        font-weight: 500;
+        border-bottom: 3px solid transparent;
+    }
+    nav a:hover, nav a.active {
+        color: red;
+        border-bottom: 3px solid red;
+    }
+    .social-icons {
+        position: fixed;
+        top: 50%;
+        left: 2.5rem;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        z-index: 200;
+    }
+    .social-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        border: 2px solid red;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: red;
+    }
+    .resume {
+        padding: 120px 9% 0 9%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #000000;
+    }
+    .resume-content h1 {
+        font-size: 5rem;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .resume-box {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .resume-box img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+</style>
+<body>
+
+<header>
+    <a href="index.html" class="logo">DO-G</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="myUniversity.html">My University</a>
+        <a href="resume.html" class="active">Resume</a>
+    </nav>
+</header>
+
+<div class="social-icons">
+    <a href="https://www.linkedin.com/in/diana-ocelotl-garcia" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/DianaOcelotl" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="mailto:dianaocelotlgarcia@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+</div>
+
+<section id="resume" class="resume">
+    <div class="resume-content">
+        <h1>My Resume</h1>
+        <div class="resume-box">
+            <img src="resume.jpeg" alt="">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
